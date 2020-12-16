@@ -71,7 +71,7 @@ func SimpleExample(t *testing.T) {
 		// A list of known peers at startup
 		Peers: []string{"localhost:7080", "localhost:7081"},
 		// A unique identifier used to identify us in a list of peers
-		Self: "localhost:7080",
+		Name: "localhost:7080",
 		// Called whenever the library detects a change in leadership
 		Observer: func(leader string) {
 			log.Printf("Current Leader: %s\n", leader)
@@ -86,7 +86,7 @@ func SimpleExample(t *testing.T) {
 
 	node2, err := election.SpawnNode(election.Config{
 		Peers:   []string{"localhost:7080", "localhost:7081"},
-		Self:    "localhost:7081",
+		Name:    "localhost:7081",
 		SendRPC: sendRPC,
 	})
 	if err != nil {
