@@ -6,9 +6,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/mailgun/holster/v4/election"
 	"github.com/mailgun/holster/v4/setter"
 	"github.com/stretchr/testify/require"
+	"github.com/thrawn01/election"
 )
 
 type ChangePair struct {

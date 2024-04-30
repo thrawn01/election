@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mailgun/holster/v4/election"
 	"github.com/mailgun/holster/v4/slice"
 	"github.com/mailgun/holster/v4/testutil"
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/thrawn01/election"
 )
 
 var (
